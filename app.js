@@ -18,13 +18,13 @@ app.configure(function() {
   app.use(express.static(__dirname + '/public'));
 });
 
-app.configure('development', function(){
-  app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
-});
-
-app.configure('production', function(){
-  app.use(express.errorHandler());
-});
+// app.configure('development', function(){
+//   app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
+// });
+// 
+// app.configure('production', function(){
+//   app.use(express.errorHandler());
+// });
 
 // Routes
 
@@ -33,5 +33,5 @@ app.get('/', function(req, res) {
 });
 
 app.listen(20036, function(){
-  console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
+  console.log("Express server listening on port 20036");
 });
