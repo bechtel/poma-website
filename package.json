@@ -2,6 +2,8 @@
     "name": "application-name"
   , "version": "0.0.1"
   , "private": true
+  , "homepage": "http://pomasite.nodester.com"
+  , "node": "0.8.1"
   , "dependencies": {
       "express": ""
   }
