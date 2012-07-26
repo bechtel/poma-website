@@ -47,19 +47,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="/"><img src="/logo.png" style="width:25px; height:25px;" /> POMA</a>
+          <a class="brand" href="#" onclick="showhome();"><img src="/logo.png" style="width:25px; height:25px;" /> POMA</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="active"><a href="#" onclick="showhome();">Home</a></li>
+              <li><a href="#" onclick="showabout();">About</a></li>
+              <li><a href="#contact" onclick="showcontact();">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div id="maincontent" class="container">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="marketing">
@@ -71,7 +71,7 @@
 	<hr class="soften">
 
 
-      <div class="marketing">
+      <div class="marketing sectioncontent">
 
 		 <h1>Paving the way</h1>
 		  <p class="marketing-byline">We build BIG stuff</p>
@@ -125,11 +125,25 @@
 
       <hr>
 
+
       <footer>
         <p>&copy; Bechtel 2012</p>
       </footer>
 
     </div> <!-- /container -->
+
+
+	<div id="aboutcontent" class="container" style="display:none">
+	<h1>About POMA</h1>
+	<p>This is Bechtel</p>
+	</div>
+
+	<div id="contactcontent" class="container" style="display:none">
+	<h1>Contact POMA</h1>
+	<p>This is Bechtel</p>
+	</div>
+		
+
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/libs/bootstrap/js/jquery-1.7.2.min.js"></script>
@@ -146,5 +160,23 @@
     <script src="/libs/bootstrap/js/bootstrap-carousel.js"></script>
     <script src="/libs/bootstrap/js/bootstrap-typeahead.js"></script>
 
+	<script type="text/javascript">
+	function showhome(){
+	     $('#maincontent').show("slow");
+	     $('#aboutcontent').hide("slow");
+	     $('#contactcontent').hide("slow");
+	}
+	function showabout(){
+	     $('#maincontent').hide("slow");
+	     $('#aboutcontent').show("slow");
+	     $('#contactcontent').hide("slow");
+	}
+	function showcontact(){
+	     $('#maincontent').hide("slow");
+	     $('#aboutcontent').hide("slow");
+	     $('#contactcontent').show("slow");
+	}
+	</script>
+	
   </body>
 </html>

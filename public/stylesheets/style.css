@@ -36,3 +36,42 @@
   color: #999;
   text-align: center;
 }
+.section{
+	width:1900px;
+	position:relative;
+}
+
+.section .sub{
+	position:relative;
+	float:left;
+	padding:9px 21px 42px 45px;
+	width:567px;
+	height:352px;
+}
+.section .sub p{
+	width:550px;
+	margin:16px 0;
+	font-size:85%;
+	line-height:1.4em;
+}
+.section .next, .section .prev{
+	font-size:18px;
+	position:absolute;
+	bottom:15px;
+	letter-spacing:-2px;
+}
+.section .next{
+	right:30px;
+}
+.section .prev{
+	left:30px;
+}
+
+.sectioncontent{
+	overflow:hidden;
+/*	width:1900px;*/
+/*	background-color:white;*/
+	position:relative;
+/*	height:400px;*/
+/*	float:left;*/
+}
