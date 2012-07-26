@@ -5,18 +5,24 @@
     <meta charset="utf-8">
     <title>POMA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Welcome to POMA, Bechtel's technology innovation center! We focus on designing and developing mobile apps and APIs for our global EPC business.">
+    <meta name="author" content="Chris Matthieu">
 
     <!-- Le styles -->
     <link href="/libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/stylesheets/style.css" rel="stylesheet">
     <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
+	body {
+	  position: relative;
+	  padding-top: 90px;
+	  background-color: #fff;
+	  background-image: url(/grid-18px-masked.png);
+	  background-repeat: repeat-x;
+	  background-position: 0 40px;
+	}
     </style>
     <link href="/libs/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -24,7 +30,7 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
@@ -41,7 +47,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Project name</a>
+          <a class="brand" href="/"><img src="/logo.png" style="width:25px; height:25px;" /> POMA</a>
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -56,44 +62,78 @@
     <div class="container">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-      </div>
+      <div class="marketing">
+		<center><img src="poma_logo_white_bg_orange.png"></center>
+        <h2>Welcome to POMA, Bechtel's technology innovation center!  We focus on designing and developing mobile apps and APIs for our global EPC business.<!-- <span class="pull-right"><a class="btn btn-inverse btn-large">Learn more &raquo;</a></span> --></h2>
+        <p class="pull-right"><a class="btn btn-inverse btn-large" href="http://bechtel.com" target="_new">Learn about Bechtel &raquo;</a></p>
+      </div><br /><br /><br />
 
-      <!-- Example row of columns -->
+	<hr class="soften">
+
+
+      <div class="marketing">
+
+		 <h1>Paving the way</h1>
+		  <p class="marketing-byline">We build BIG stuff</p>
+		<hr class="soften">
+		
       <div class="row">
         <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+			<img class="bs-icon" src="/glyphicons_163_iphone.png">
+          	<h2>AppStore</h2>
+           	<p>Visit our private AppStore for the latest mobile applications including: TeamWorks, CraftTime, and iForms. </p>
+          <p><a class="btn" href="http://appstore.mypsn.com">View details &raquo;</a></p>
         </div>
         <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+			<img class="bs-icon" src="/glyphicons_009_magic.png">	
+          <h2>API Marketplace</h2>
+           <p>Visit our API marketplace and get started today building new apps using our simple REST APIs. </p>
+          <p><a class="btn" href="http://developer.mypsn.com">View details &raquo;</a></p>
        </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+			<img class="bs-icon" src="/glyphicons_082_roundabout.png">	
+          <h2>Open Source</h2>
+          <p>Our most popular open source platform today is <a href="http://iringtoday.com/">iRing</a>, (ISO 15926 Real-time Interoperability Network Grid).</p>
+          <p><a class="btn" href="http://github.com/bechtel">View details &raquo;</a></p>
         </div>
       </div>
+
+
+      <div class="row">
+        <div class="span4">
+			<img class="bs-icon" src="/glyphicons_266_book_open.png">
+          	<h2>Technology Blog</h2>
+           	<p>Visit our technology blog to learn more about our innovative projects and lessons learned from mobile, API development, and cloud computing. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+        <!-- <div class="span4">
+			<img class="bs-icon" src="/glyphicons_009_magic.png">	
+          <h2>API Marketplace</h2>
+           <p>Visit our API marketplace and get started today building new apps using our simple REST APIs. </p>
+          <p><a class="btn" href="http://developer.mypsn.com">View details &raquo;</a></p>
+       </div>
+        <div class="span4">
+			<img class="bs-icon" src="/glyphicons_082_roundabout.png">	
+          <h2>Open Source</h2>
+          <p>Our most popular open source platform today is <a href="http://iringtoday.com/">iRing</a>, (ISO 15926 Real-time Interoperability Network Grid). More coming soon...</p>
+          <p><a class="btn" href="http://github.com/bechtel">View details &raquo;</a></p>
+        </div> -->
+      </div>
+
+
+  	</div>
 
       <hr>
 
       <footer>
-        <p>&copy; POMA 2012</p>
+        <p>&copy; Bechtel 2012</p>
       </footer>
 
     </div> <!-- /container -->
 
-    <!-- Le javascript
-    ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/libs/bootstrap/js/jquery-1.7.2.min.js"></script>
-    <!-- <script src="/libs/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="/libs/bootstrap/js/bootstrap-transition.js"></script>
     <script src="/libs/bootstrap/js/bootstrap-alert.js"></script>
     <script src="/libs/bootstrap/js/bootstrap-modal.js"></script>
     <script src="/libs/bootstrap/js/bootstrap-dropdown.js"></script>
@@ -104,7 +144,7 @@
     <script src="/libs/bootstrap/js/bootstrap-button.js"></script>
     <script src="/libs/bootstrap/js/bootstrap-collapse.js"></script>
     <script src="/libs/bootstrap/js/bootstrap-carousel.js"></script>
-    <script src="/libs/bootstrap/js/bootstrap-typeahead.js"></script> -->
+    <script src="/libs/bootstrap/js/bootstrap-typeahead.js"></script>
 
   </body>
 </html>
