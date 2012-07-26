@@ -50,29 +50,33 @@
           <a class="brand" href="#" onclick="showhome();"><img src="/logo.png" style="width:25px; height:25px;" /> POMA</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#" onclick="showhome();">Home</a></li>
-              <li><a href="#" onclick="showabout();">About</a></li>
-              <li><a href="#contact" onclick="showcontact();">Contact</a></li>
+              <li id="home" class="active"><a href="#" onclick="showhome();">Home</a></li>
+              <li id="about"><a href="#" onclick="showabout();">About</a></li>
+              <li id="contact"><a href="#contact" onclick="showcontact();">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
-    <div id="maincontent" class="container">
-
-      <!-- Main hero unit for a primary marketing message or call to action -->
+    <div class="container">
       <div class="marketing">
 		<center><img src="poma_logo_white_bg_orange.png"></center>
+		</div>
+	</div>
+		
+	<div id="maincontent" class="container">
+		<div class="marketing">
+		
         <h2>Welcome to POMA, Bechtel's technology innovation center!  We focus on designing and developing mobile apps and APIs for our global EPC business.<!-- <span class="pull-right"><a class="btn btn-inverse btn-large">Learn more &raquo;</a></span> --></h2>
-        <p class="pull-right"><a class="btn btn-inverse btn-large" href="http://bechtel.com" target="_new">Learn about Bechtel &raquo;</a></p>
+        <p class="pull-right"><a class="btn btn-warning btn-large" href="http://bechtel.com" target="_new">Learn about Bechtel &raquo;</a></p>
       </div><br /><br /><br />
 
-	<hr class="soften">
 
 
-      <div class="marketing sectioncontent">
+      <div class="marketing">
 
+		<hr class="soften">
 		 <h1>Paving the way</h1>
 		  <p class="marketing-byline">We build BIG stuff</p>
 		<hr class="soften">
@@ -134,13 +138,31 @@
 
 
 	<div id="aboutcontent" class="container" style="display:none">
-	<h1>About POMA</h1>
-	<p>This is Bechtel</p>
+	<div class="marketing">		
+		<h1>About Us</h1>
+		<h2>Bechtel is the leader in Engineering, Procurement, and Construction.  Now with our POMA initiatives, were are paving the way for delivering innovative technologies to the field. </h2>
+		<h1>Our Team</h1>
+		<p class="well"><img src="/buddyicon.jpeg"></p>
+		<p class="well"><img src="/buddyicon.jpeg"></p>
+		<p class="well"><img src="/buddyicon.jpeg"></p>
+		<p class="well"><img src="/buddyicon.jpeg"></p>
+		<p class="well"><img src="/buddyicon.jpeg"></p>
+		<p class="well"><img src="/buddyicon.jpeg"></p>
+	</div>
 	</div>
 
 	<div id="contactcontent" class="container" style="display:none">
-	<h1>Contact POMA</h1>
-	<p>This is Bechtel</p>
+		<div class="marketing">		
+			<h1>Contact Us</h1>
+			<form class="well">
+			  	<input type="text" class="input-large" name="contactname" placeholder="Contact Name"><br />
+			  	<input type="text" class="input-large" name="contactemail" placeholder="Contact Email"><br />
+			  	<input type="text" class="input-large" name="contactphone" placeholder="Contact Phone Number"><br />
+				<textarea class="input-xxlarge" name="contactphone" placeholder="Contact Phone Number" rows="10"></textarea>
+			  <p><button type="submit" class="btn btn-medium btn-primary">Submit</button></p>
+			</form>
+			
+		</div>
 	</div>
 		
 
@@ -162,19 +184,28 @@
 
 	<script type="text/javascript">
 	function showhome(){
-	     $('#maincontent').show("slow");
-	     $('#aboutcontent').hide("slow");
-	     $('#contactcontent').hide("slow");
+	    $('#maincontent').show("fast");
+	    $('#aboutcontent').hide("fast");
+	    $('#contactcontent').hide("fast");
+		$('#home').addClass('active');
+		$('#about').removeClass('active');
+		$('#contact').removeClass('active');
 	}
 	function showabout(){
-	     $('#maincontent').hide("slow");
-	     $('#aboutcontent').show("slow");
-	     $('#contactcontent').hide("slow");
+	    $('#maincontent').hide("fast");
+	    $('#aboutcontent').show("fast");
+	    $('#contactcontent').hide("fast");
+		$('#home').removeClass('active');
+		$('#about').addClass('active');
+		$('#contact').removeClass('active');
 	}
 	function showcontact(){
-	     $('#maincontent').hide("slow");
-	     $('#aboutcontent').hide("slow");
-	     $('#contactcontent').show("slow");
+	    $('#maincontent').hide("fast");
+	    $('#aboutcontent').hide("fast");
+	    $('#contactcontent').show("fast");
+		$('#home').removeClass('active');
+		$('#about').removeClass('active');
+		$('#contact').addClass('active');
 	}
 	</script>
 	
