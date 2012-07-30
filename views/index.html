@@ -35,6 +35,34 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+
+	<script type="text/javascript">
+	function showhome(){
+	    $('#maincontent').show("fast");
+	    $('#aboutcontent').hide("fast");
+	    $('#contactcontent').hide("fast");
+		$('#home').addClass('active');
+		$('#about').removeClass('active');
+		$('#contact').removeClass('active');
+	}
+	function showabout(){
+	    $('#maincontent').hide("fast");
+	    $('#aboutcontent').show("fast");
+	    $('#contactcontent').hide("fast");
+		$('#home').removeClass('active');
+		$('#about').addClass('active');
+		$('#contact').removeClass('active');
+	}
+	function showcontact(){
+	    $('#maincontent').hide("fast");
+	    $('#aboutcontent').hide("fast");
+	    $('#contactcontent').show("fast");
+		$('#home').removeClass('active');
+		$('#about').removeClass('active');
+		$('#contact').addClass('active');
+	}
+	</script>
+
   </head>
 
   <body>
@@ -62,7 +90,7 @@
     <div class="container">
       <div class="marketing">
 		<center><img src="poma_logo_white_bg_orange.png"></center>
-		</div>
+	  </div>
 	</div>
 		
 	<div id="maincontent" class="container">
@@ -116,26 +144,11 @@
            <p>Interested in partnering with us? Learn about our standards and processes. </p>
           <p><a class="btn" href="https://prm.mypsn.com/information-technology-strategy">View details &raquo;</a></p>
        </div>
-        <!-- <div class="span4">
-			<img class="bs-icon" src="/glyphicons_082_roundabout.png">	
-          <h2>Open Source</h2>
-          <p>Our most popular open source platform today is <a href="http://iringtoday.com/">iRing</a>, (ISO 15926 Real-time Interoperability Network Grid). More coming soon...</p>
-          <p><a class="btn" href="http://github.com/bechtel">View details &raquo;</a></p>
-        </div>
-      </div> -->
-
-
   	</div>
 
-      <hr>
 
-
-      <footer>
-        <p>&copy; Bechtel 2012</p>
-      </footer>
-
-    </div> <!-- /container -->
-
+  </div> <!-- /container -->
+</div>
 
 	<div id="aboutcontent" class="container" style="display:none">
 	<div class="marketing">		
@@ -164,7 +177,15 @@
 			
 		</div>
 	</div>
-		
+
+
+
+<div class="container">
+    <hr>
+    <footer>
+      <p>&copy; Bechtel 2012</p>
+    </footer>
+</div>
 
 
     <!-- Placed at the end of the document so the pages load faster -->
@@ -181,33 +202,6 @@
     <script src="/libs/bootstrap/js/bootstrap-collapse.js"></script>
     <script src="/libs/bootstrap/js/bootstrap-carousel.js"></script>
     <script src="/libs/bootstrap/js/bootstrap-typeahead.js"></script>
-
-	<script type="text/javascript">
-	function showhome(){
-	    $('#maincontent').show("fast");
-	    $('#aboutcontent').hide("fast");
-	    $('#contactcontent').hide("fast");
-		$('#home').addClass('active');
-		$('#about').removeClass('active');
-		$('#contact').removeClass('active');
-	}
-	function showabout(){
-	    $('#maincontent').hide("fast");
-	    $('#aboutcontent').show("fast");
-	    $('#contactcontent').hide("fast");
-		$('#home').removeClass('active');
-		$('#about').addClass('active');
-		$('#contact').removeClass('active');
-	}
-	function showcontact(){
-	    $('#maincontent').hide("fast");
-	    $('#aboutcontent').hide("fast");
-	    $('#contactcontent').show("fast");
-		$('#home').removeClass('active');
-		$('#about').removeClass('active');
-		$('#contact').addClass('active');
-	}
-	</script>
 	
   </body>
 </html>
