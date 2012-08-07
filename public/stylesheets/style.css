@@ -75,3 +75,105 @@
 /*	height:400px;*/
 /*	float:left;*/
 }
+
+/* Posts
+------------------------------- */
+.post h4 {
+  margin-bottom: 9px;
+}
+
+.post h4 a {
+  color: #333;
+}
+
+.post img.image {
+  max-width: 100%;
+  margin-top: 9px;
+}
+
+/* Isotope Transitions
+------------------------------- */
+.isotope,
+.isotope .item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+/* JavaScript event trig­gered by media query rules
+   @see: http://www.paulrhayes.com/2011-11/use-css-transitions-to-link-media-queries-and-javascript/
+------------------------------- */
+.mq {
+  -webkit-transition: width 0.001ms;
+  -moz-transition: width 0.001ms;
+  -o-transition: width 0.001ms;
+  transition: width 0.001ms;
+  width: 0;
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 768px) {
+  header h1 small {
+    display: block;
+  }
+
+  header div.description {
+    padding-top: 9px;
+    padding-bottom: 4px;
+  }
+
+  .isotope .item {
+    position: static ! important;
+    -webkit-transform: translate(0px, 0px) ! important;
+       -moz-transform: translate(0px, 0px) ! important;
+            transform: translate(0px, 0px) ! important;
+  }
+}
+
+@media (max-width: 980px) {
+  header p.lead span {
+    display: block;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+
+}
+
+
+@media (min-width: 768px) and (max-width: 980px) {
+  #posts .span4 {
+    width: 352px;
+  }
+}
+
+@media (min-width: 980px) {
+
+}
+
+@media (min-width: 1200px) {
+  #posts .span4 {
+    width: 270px;
+  }
+}
