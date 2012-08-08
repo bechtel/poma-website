@@ -5,7 +5,7 @@
   , "homepage": "http://pomasite.nodester.com"
   , "node": "0.8.1"
   , "dependencies": {
-      "express": "*",
+      "express": "3.0.0rc2",
       "socket.io": "*"
   }
   , "devDependencies": {

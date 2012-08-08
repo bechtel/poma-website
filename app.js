@@ -6,8 +6,9 @@
 var express = require('express'),
     io = require('socket.io');
 
-var app = module.exports = express();
-
+var app = express();
+	
+	
 // middleware
 app.configure(function() {
   app.use(express.static(__dirname + '/public'));
