@@ -1,0 +1,5 @@
+each status in statuses
+  .post.item.span3(id="#{status.id}", count="#{status.count}")
+    .well
+      p #{status.url}
+        p.apis(style="font-size:0.8em") #{status.apis}

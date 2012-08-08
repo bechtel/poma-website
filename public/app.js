@@ -6,6 +6,7 @@
 require(["dermis"], function (dermis) {
   dermis.route('/');
   dermis.route('/tweets');
+  dermis.route('/statuses');
   dermis.route('/about');
   dermis.route('/contact');
   dermis.init();
